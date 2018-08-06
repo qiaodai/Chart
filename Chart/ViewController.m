@@ -25,6 +25,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //注意在 pch 上加上  下面宏定义代码
+    /*
+     #ifdef __OBJC__
+     #import <UIKit/UIKit.h>
+     #import <Foundation/Foundation.h>
+     
+     #import "GGGraphics.h"
+     #endif
+     */
+    
     _barData1 = [[BarData alloc] init];
     _barData1.dataAry = @[@1.29, @-1.88, @1.46, @-3.30, @3.66, @3.23, @-3.48, @-3.51];
     _barData1.barWidth = 10;
